@@ -57,11 +57,14 @@ a.nav-item:hover {
 	margin-bottom:15px;
 }
 
-.project-figure {
-	margin: 0 auto 1rem auto;
-	max-height: 256px;
-	max-width: 256px;
+.project-figure img {
+  max-height: 180px;   /* adjust this value if needed */
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .project-text {
 	text-align: justify;
