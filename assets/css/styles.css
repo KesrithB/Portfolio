@@ -65,6 +65,13 @@ a.nav-item:hover {
   margin: 0 auto;
 }
 
+.image.is-4by3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 .project-text {
 	text-align: justify;
