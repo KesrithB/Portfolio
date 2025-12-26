@@ -59,8 +59,8 @@ a.nav-item:hover {
 
 .project-figure img {
   /*max-height: 180px;   /* adjust this value if needed */
-  height: 100%;
-  width: 100%;
+  height: 270px;
+  width: 100%; /*480*/
   object-fit: cover;
   display: block;
   margin: 0 auto;
