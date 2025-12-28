@@ -1,68 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>USB-C LED Power PCB | Kez Balistreri</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Bulma -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
-  <!-- Your existing stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<a href="https://github.com/KesrithB" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>			
-			</div>
-
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
-			</div>
-
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-  
-<body>
-
-<!-- ================= MAIN CONTENT ================= -->
 <section class="section section-2">
   <div class="container">
 
-    <!-- Project Title -->
     <div class="has-text-centered mb-6">
       <h1 class="title is-2">USB-C LED Power PCB</h1>
-      <p class="subtitle is-5">
-        Custom USB-C sink PCB for regulated LED power
-      </p>
+      <p class="subtitle is-5">Custom USB-C sink PCB for regulated LED power</p>
     </div>
 
-    <!-- Hero Image -->
-    <figure class="image mb-6">
-      <img src="assets/img/project 3-1.png" alt="USB-C LED Power PCB">
-    </figure>
-
-    <!-- Project Overview -->
-    <div class="columns is-centered">
-      <div class="column is-8">
-
+    <div class="columns is-vcentered is-variable is-8">
+      
+      <div class="column is-6">
         <div class="box">
-
           <h2 class="title is-4">Project Overview</h2>
           <p>
             This project involved designing and validating a custom PCB that
@@ -74,22 +21,24 @@
           <hr>
 
           <h2 class="title is-4">Key Features</h2>
-          <ul>
-            <li>USB-C Sink implementation using CC pull-down resistors</li>
-            <li>5V regulated output for LEDs</li>
-            <li>Compact PCB designed in EasyEDA</li>
-            <li>Designed for modern USB-C power sources</li>
-          </ul>
+          <div class="content">
+            <ul>
+              <li>USB-C Sink implementation using CC pull-down resistors</li>
+              <li>5V regulated output for LEDs</li>
+              <li>Compact PCB designed in EasyEDA</li>
+              <li>Designed for modern USB-C power sources</li>
+            </ul>
+          </div>
 
           <hr>
 
           <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
-            <span class="tag">EasyEDA</span>
-            <span class="tag">USB-C</span>
-            <span class="tag">PCB Design</span>
-            <span class="tag">Power Electronics</span>
-            <span class="tag">Hardware Validation</span>
+            <span class="tag is-link is-light">EasyEDA</span>
+            <span class="tag is-link is-light">USB-C</span>
+            <span class="tag is-link is-light">PCB Design</span>
+            <span class="tag is-link is-light">Power Electronics</span>
+            <span class="tag is-link is-light">Hardware Validation</span>
           </div>
 
           <hr>
@@ -100,13 +49,15 @@
             and hands-on testing across five manufactured units. Testing confirmed
             stable 5V delivery from multiple USB-C power sources.
           </p>
-
         </div>
       </div>
-    </div>
 
-  </div>
+      <div class="column is-6">
+        <figure class="image">
+          <img src="assets/img/project 3-1.png" alt="USB-C LED Power PCB" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        </figure>
+        
+        </div>
+
+    </div> </div>
 </section>
-
-</body>
-</html>
