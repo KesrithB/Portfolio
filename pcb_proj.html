@@ -1,57 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>R2-D2 Interactive Robot | Kez Balistreri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Your existing stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar section-4">
+  <div class="navbar-brand">
+    <a class="navbar-item nav-item" href="index.html">← Back to Portfolio</a>
+  </div>
+</nav>
+
+<!-- ================= PROJECT SECTION ================= -->
 <section class="section section-2">
   <div class="container">
 
+    <!-- Title -->
     <div class="has-text-centered mb-6">
-      <h1 class="title is-2">USB-C LED Power PCB</h1>
-      <p class="subtitle is-5">Custom USB-C sink PCB for regulated LED power</p>
+      <h1 class="title is-2">R2-D2 Interactive Robot</h1>
+      <p class="subtitle is-5">
+        Embedded robotics project with autonomous and interactive behaviors
+      </p>
     </div>
 
-    <div class="columns is-desktop is-vcentered">
-      
-      <div class="column is-5-desktop">
-        <figure class="image">
-          <img src="assets/img/project 3-1.png" alt="USB-C LED Power PCB" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+    <div class="columns is-vcentered">
+
+      <!-- LEFT: TEXT -->
+      <div class="column is-5">
+
+        <h3 class="title is-4">Completed:</h3>
+        <p>2024</p>
+
+        <h3 class="title is-4 mt-4">Platform:</h3>
+        <p>
+          Microcontroller-based robotics platform, motors, sensors, audio
+        </p>
+
+        <h3 class="title is-4 mt-4">Roles:</h3>
+        <p>
+          Embedded Programming, Electronics Integration, Systems Testing
+        </p>
+
+        <h3 class="title is-4 mt-4">Description:</h3>
+        <p>
+          This project involved designing and programming an interactive
+          R2-D2 inspired robot capable of autonomous movement and reactive
+          behaviors. The robot responds to sensor input and user interaction
+          through coordinated motor control, sound playback, and state-based
+          logic.
+        </p>
+
+        <h3 class="title is-4 mt-4">Key Features:</h3>
+        <ul>
+          <li>Autonomous and reactive motion control</li>
+          <li>Sensor-driven state machine</li>
+          <li>Integrated audio feedback</li>
+          <li>Modular embedded software design</li>
+        </ul>
+
+      </div>
+
+      <!-- RIGHT: IMAGES -->
+      <div class="column is-7">
+
+        <figure class="image mb-5 project-figure">
+          <img src="assets/img/r2d2-1.png" alt="R2-D2 robot overview">
         </figure>
+
+        <figure class="image project-figure">
+          <img src="assets/img/r2d2-2.png" alt="R2-D2 electronics and internals">
+        </figure>
+
       </div>
 
-      <div class="column is-7-desktop">
-        <div class="box">
-          <h2 class="title is-4">Project Overview</h2>
-          <p>
-            This project involved designing and validating a custom PCB that negotiates 5V power from USB-C sources using proper sink logic. The board provides regulated power for LED indicators and small embedded systems.
-          </p>
+    </div>
 
-          <hr>
-
-          <h2 class="title is-4">Key Features</h2>
-          <div class="content">
-            <ul>
-              <li>USB-C Sink implementation using CC pull-down resistors</li>
-              <li>5V regulated output for LEDs</li>
-              <li>Compact PCB designed in EasyEDA</li>
-              <li>Designed for modern USB-C power sources</li>
-            </ul>
-          </div>
-
-          <hr>
-
-          <h2 class="title is-4">Tools & Technologies</h2>
-          <div class="tags">
-            <span class="tag is-info is-light">EasyEDA</span>
-            <span class="tag is-info is-light">USB-C</span>
-            <span class="tag is-info is-light">PCB Design</span>
-            <span class="tag is-info is-light">Power Electronics</span>
-            <span class="tag is-info is-light">Hardware Validation</span>
-          </div>
-
-          <hr>
-
-          <h2 class="title is-4">Design & Validation</h2>
-          <p>
-            Hardware functionality was validated through Design Rule Checks (DRC) and hands-on testing across five manufactured units. Testing confirmed stable 5V delivery from multiple USB-C power sources.
-          </p>
-        </div>
-      </div>
-
-    </div> </div>
+  </div>
 </section>
+
+</body>
+</html>
