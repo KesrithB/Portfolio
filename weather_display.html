@@ -1,63 +1,95 @@
-<section class="section section-2">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weatherboard LED Display | Kez Balistreri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Your existing stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar section-4">
+  <div class="navbar-brand">
+    <a class="navbar-item nav-item" href="index.html">← Back to Portfolio</a>
+  </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<section class="section section-5">
   <div class="container">
 
-    <!-- Title -->
+    <!-- Project Title -->
     <div class="has-text-centered mb-6">
       <h1 class="title is-2">Weatherboard</h1>
       <p class="subtitle is-5">
-        Animated LED weather display powered by live API data
+        Real-time weather visualization using an addressable LED array
       </p>
     </div>
 
-    <div class="columns is-vcentered">
+    <!-- Hero Image -->
+    <figure class="image mb-6">
+      <img src="assets/img/weatherboard-1.png" alt="Weatherboard LED display">
+    </figure>
 
-      <!-- LEFT: TEXT CONTENT -->
-      <div class="column is-5">
+    <!-- Project Overview -->
+    <div class="columns is-centered">
+      <div class="column is-8">
 
-        <h3 class="title is-4">Completed:</h3>
-        <p>2024</p>
+        <div class="box">
 
-        <h3 class="title is-4 mt-4">Platform:</h3>
-        <p>Arduino Uno R4 WiFi, WS2811 LEDs</p>
+          <h2 class="title is-4">Project Overview</h2>
+          <p>
+            Weatherboard is an animated LED display that visualizes real-time
+            weather data retrieved from an external API. The system fetches,
+            deserializes, and interprets JSON data, mapping weather conditions
+            to dynamic lighting patterns across an addressable LED array.
+          </p>
 
-        <h3 class="title is-4 mt-4">Roles:</h3>
-        <p>
-          Embedded Programming, Hardware Design, Data Visualization
-        </p>
+          <hr>
 
-        <h3 class="title is-4 mt-4">Description:</h3>
-        <p>
-          Weatherboard is an animated LED display that visualizes real-time
-          weather data retrieved from an external API. JSON data is fetched,
-          parsed, and mapped to dynamic lighting patterns across a 150-LED
-          array, providing an intuitive and ambient weather readout.
-        </p>
+          <h2 class="title is-4">Key Features</h2>
+          <ul>
+            <li>Live weather data fetched from an external API</li>
+            <li>JSON parsing on embedded hardware</li>
+            <li>Animated visualizations using WS2811 LEDs</li>
+            <li>WiFi-enabled microcontroller</li>
+          </ul>
 
-        <h3 class="title is-4 mt-4">Key Features:</h3>
-        <ul>
-          <li>Live weather data via external API</li>
-          <li>JSON deserialization on embedded hardware</li>
-          <li>Individually addressable LED animations</li>
-          <li>WiFi-enabled microcontroller</li>
-        </ul>
+          <hr>
 
+          <h2 class="title is-4">Tools & Technologies</h2>
+          <div class="tags">
+            <span class="tag">Arduino Uno R4 WiFi</span>
+            <span class="tag">WS2811 LEDs</span>
+            <span class="tag">REST API</span>
+            <span class="tag">JSON</span>
+            <span class="tag">Embedded Systems</span>
+          </div>
+
+          <hr>
+
+          <h2 class="title is-4">Implementation Details</h2>
+          <p>
+            The system periodically retrieves weather data over WiFi and
+            deserializes JSON responses to extract key metrics such as
+            temperature and conditions. These values are then translated
+            into color schemes and animation patterns, creating an intuitive
+            and ambient weather display.
+          </p>
+
+        </div>
       </div>
-
-      <!-- RIGHT: IMAGES -->
-      <div class="column is-7">
-
-        <figure class="image mb-5 project-figure">
-          <img src="assets/img/weatherboard-1.png" alt="Weatherboard LED display">
-        </figure>
-
-        <figure class="image project-figure">
-          <img src="assets/img/weatherboard-2.png" alt="Weatherboard animation detail">
-        </figure>
-
-      </div>
-
     </div>
 
   </div>
 </section>
 
+</body>
+</html>
