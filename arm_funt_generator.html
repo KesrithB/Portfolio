@@ -81,10 +81,18 @@
 
           <h2 class="title is-4">Implementation Details</h2>
           <p>
-            The arm assembly was designed by defining the desired output motion
-            and synthesizing a linkage configuration to achieve that behavior.
-            Geometric relationships between links were analyzed to ensure smooth,
-            repeatable motion across the full range of operation.
+            In this project, I developed an embedded system to generate and manipulate waveforms using an STM32 microcontroller, 
+            focusing on digital-to-analog conversion (DAC) and direct digital synthesis (DDS). I implemented assembly routines to
+            calculate phase increments based on a desired frequency and sample rate, enabling the system to iterate through a 1024-entry wave table.
+            I decided to use phase tracking in "16ths" to maintain precision, successfully producing waveforms such as sine and sawtooth 
+            waves, which were verified on an oscilloscope at frequencies around 585Hz to 597Hz.
+
+
+            In addition to controlling the frequency of the signal, I also used analog-to-digital conversion (ADC) to allow for real-time hardware interaction. 
+            I configured ADC channels (specifically channels 5 and 6) to read values from potentiometers on a breadboard. These readings were
+            used as scalars to dynamically adjust the gain and frequency through a continuous read loop in my main assembly 
+            code. This integration demonstrated a complete signal chain where physical analog inputs directly influenced the digital generation of
+            audio signals.
           </p>
 
         </div>
