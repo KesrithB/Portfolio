@@ -65,39 +65,32 @@
 
           <h2 class="title is-4">Project Overview</h2>
           <p class="has-text-white">
-            This project involved designing and validating a custom PCB that
-            negotiates 5V power from USB-C sources using proper sink logic.
-            The board provides regulated power for LEDs.
+            This accumulator will power our car's motor. At peak output, it will produce 170 amps.
+            We are monitoring the temperature of 100 cells using thermistors and the Battery Management System via CAN communication. The thermistors measure between -41 and 100℃.
+            Collaborated on the design of the accumulator enclosure to meet strict FSAE safety regulations.
+            water-resistant to allow airflow for cooling without letting water into the enclosure.
+            Designed and implemented a custom accumulator charging profile and connection to the emergency shutdown circuit to ensure safe, reliable function.
+            Designed TSMP (tractive system measuring points) system by designing an enclosure for the HV connections in Fusion, selecting HV-rated parts, and installing HV-rated resistors to prevent arcing in the event of a short.
+
           </p>
 
           <hr>
             <h2 class="title is-4">Key Features</h2>
             <ul class="has-text-white">
-              <li>USB-C Sink implementation using CC pull-down resistors</li>
-              <li>5V regulated output for LEDs</li>
-              <li>Compact PCB designed in EasyEDA</li>
-              <li>Designed for modern USB-C power sources</li>
+              <li>Temperature monitoring of 100 cells</li>
+              <li>Voltage monitoring using cell taps</li>
+              <li>Air cooled</li>
+              <li>Emergency shutdown circuit</li>
             </ul>
           <hr>
 
         <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
-            <span class="tag">EasyEDA</span>
-            <span class="tag">USB-C</span>
-            <span class="tag">PCB Design</span>
-            <span class="tag">Power Electronics</span>
-            <span class="tag">Hardware Validation</span>
+            <span class="tag">Thermistors</span>
+            <span class="tag">Battery Management system</span>
+            <span class="tag">CAN communication</span>
           </div>
         <hr>
-
-
-
-          <h2 class="title is-4">Design & Validation</h2>
-          <p class="has-text-white">
-            Hardware functionality was validated through Design Rule Checks (DRC)
-            and hands-on testing across five manufactured units. Testing confirmed
-            stable 5V delivery from multiple USB-C power sources.
-          </p>
 
         </div>
       </div>
