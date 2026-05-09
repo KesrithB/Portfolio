@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>USB-C LED Power PCB | Kez Balistreri</title>
+  <title>Tamagotchi Handheld Game Console | Kez Balistreri</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bulma -->
@@ -27,24 +27,47 @@
 
     <!-- Project Title -->
     <div class="has-text-centered mb-6">
-      <h1 class="title is-2">USB-C LED Power PCB</h1>
+      <h1 class="title is-2">Touchscreen Drawing Tablet</h1>
       <p class="subtitle is-5 has-text-white">
-        Custom USB-C sink PCB for regulated LED power
+        Custom PCB for Touchscreen Drawing Tablet
       </p>
     </div>
 
-    <div class="columns is-variable is-4 mb-6">
-      <div class="column">
-        <figure class="image">
-          
-          <img src="assets/img/pcb-1.png" style="border-radius: 8px; max-width: 400px; margin: auto; display: block;">
-        </figure>
+        <!-- Hero Image -->
+    <!--
+    
+    <div class="is-flex is-justify-content-center">
+      <figure class="image mb-6" style="width: 100%; max-width: 400px;">
+        <img src="assets/img/tamagotchi_pcb.png" alt="R2-D2 interactive robot" style="border-radius: 8px;">
+      </figure>
+    </div>
+
+    -->
+    
+    <!-- ===== MEDIA ===== -->
+    <div class="columns is-vcentered mb-6">
+      <div class="column is-flex is-justify-content-center">
+        <div style="max-width: 600px; width: 100%;">
+          <figure class="image is-16by9"> 
+            <iframe 
+              class="has-ratio" 
+              src="https://www.youtube.com/embed/fMISraIdO6o?autoplay=1&mute=1&loop=1&playlist=fMISraIdO6o"
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="border-radius: 8px;">
+            </iframe>
+          </figure>
+        </div>
       </div>
-      <div class="column">
-        <figure class="image">
-          <img src="assets/img/pcb_2.jpeg" style="border-radius: 8px; max-width: 340px; margin: auto; display: block;">
+    
+      <div class="column is-flex is-justify-content-center">
+        <figure class="image" style="max-width: 500px;">
+          <img src="assets/img/DrawingTablet3DView.png" 
+               alt="Drawing Tablet 3D View" 
+               style="border-radius: 8px; aspect-ratio: 1/1; object-fit: cover;">
         </figure>
-      </div>
+      </div> 
     </div>
 
     <!-- Project Overview -->
@@ -55,38 +78,37 @@
 
           <h2 class="title is-4">Project Overview</h2>
           <p class="has-text-white">
-            This project involved designing and validating a custom PCB that
-            negotiates 5V power from USB-C sources using proper sink logic.
-            The board provides regulated power for LEDs.
+            Led an electronics workshop of 20 students where each participant soldered and programmed a Tamagotchi game console. 
           </p>
 
           <hr>
-            <h2 class="title is-4">Key Features</h2>
-            <ul class="has-text-white">
-              <li>USB-C Sink implementation using CC pull-down resistors</li>
-              <li>5V regulated output for LEDs</li>
-              <li>Compact PCB designed in EasyEDA</li>
-              <li>Designed for modern USB-C power sources</li>
-            </ul>
+
+          <h2 class="title is-4">Key Features</h2>
+          <ul class="has-text-white">
+            <li>2 layer pcb</li>
+            <li>Active low GPIO button Configuration</li>
+            <li>I2C communication protocol used to communicate with LDC</li>
+            <li>Through hole soldering</li>
+            <li>3D printed housing designed in Fusion</li>
+          </ul>
+
           <hr>
 
-        <h2 class="title is-4">Tools & Technologies</h2>
+          <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
-            <span class="tag">EasyEDA</span>
-            <span class="tag">USB-C</span>
+            <span class="tag">KiCad</span>
+            <span class="tag">LCD Programming</span>
             <span class="tag">PCB Design</span>
-            <span class="tag">Power Electronics</span>
+            <span class="tag">ESP 32</span>
             <span class="tag">Hardware Validation</span>
           </div>
-        <hr>
 
-
+          <hr>
 
           <h2 class="title is-4">Design & Validation</h2>
           <p class="has-text-white">
-            Hardware functionality was validated through Design Rule Checks (DRC)
-            and hands-on testing across five manufactured units. Testing confirmed
-            stable 5V delivery from multiple USB-C power sources.
+            Ensured design passed DRC check, and that all footprints matched the selected components prior to ordering. Assembled
+            3 consoles to ensure the design was functional. 
           </p>
 
         </div>
