@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accumulator Design | Kez Balistreri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Your existing stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar section-1">
+  <div class="navbar-brand">
+    <a class="navbar-item nav-item" href="index.html">← Back to Portfolio</a>
+  </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<section class="section section-1">
+  <div class="container">
+
+    <!-- Project Title -->
+    <div class="has-text-centered mb-6">
+      <h1 class="title is-2">Accumulator Design</h1>
+      <p class="subtitle is-5 has-text-white">
+        300V system for powering our EV vehicle
+      </p>
+    </div>
+
+    <div class="columns is-variable is-4 is-multiline is-centered mb-6">
+      
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/modules_side_by_side.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/thermistor_placements.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/thermistor_harness.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/original_thermistor_harness.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/tsmp_box_cleat_view.png" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/tsmp_box_inside_view.png" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+    </div>
+
+    <!-- Project Overview -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+
+        <div class="box">
+
+          <h2 class="title is-4">Project Overview</h2>
+          <p class="has-text-white">
+            This accumulator will power our car's motor. At peak output, it will produce 170 amps.
+            We are monitoring the temperature of 100 cells using thermistors and the Battery Management System via CAN communication. The thermistors measure between -41 and 100℃.<br><br>
+            
+            Collaborated on the design of the accumulator enclosure to meet strict FSAE safety regulations.
+            water-resistant to allow airflow for cooling without letting water into the enclosure.<br><br>
+            
+            Designed and implemented a custom accumulator charging profile and connection to the emergency shutdown circuit to ensure safe, reliable function.<br><br>
+            
+            developed TSMP (tractive system measuring points) system by designing an enclosure for the HV connections in Fusion, selecting HV-rated parts, and installing HV-rated resistors to prevent arcing in the event of a short.
+
+          </p>
+
+          <hr>
+            <h2 class="title is-4">Key Features</h2>
+            <ul class="has-text-white">
+              <li>Temperature monitoring of 100 cells</li>
+              <li>Voltage monitoring using cell taps</li>
+              <li>Air cooled</li>
+              <li>Emergency shutdown circuit</li>
+            </ul>
+          <hr>
+
+        <h2 class="title is-4">Tools & Technologies</h2>
+          <div class="tags">
+            <span class="tag">Thermistors</span>
+            <span class="tag">Battery Management system</span>
+            <span class="tag">CAN communication</span>
+          </div>
+        <hr>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

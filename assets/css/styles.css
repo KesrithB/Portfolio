@@ -96,6 +96,7 @@ a.nav-item:hover {
 
 
 .project-text {
+	color: #fdfdfd;
 	text-align: justify;
 }
 
@@ -106,7 +107,7 @@ a.nav-item:hover {
 
 .title {
 	color: #fff;
-	text-align: left;
+	text-align: inherit;
 	margin-bottom: 2rem;
 }
 

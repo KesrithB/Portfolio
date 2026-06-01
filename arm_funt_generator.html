@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <!-- Your existing stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -22,21 +22,41 @@
 </nav>
 
 <!-- ================= MAIN CONTENT ================= -->
-<section class="section section-5">
+<section class="section section-4">
   <div class="container">
 
     <!-- Project Title -->
     <div class="has-text-centered mb-6">
       <h1 class="title is-2">Arm Assembly Function Generator</h1>
-      <p class="subtitle is-5">
-        Mechanical linkage design for generating controlled arm motion
+      <p class="subtitle is-5 has-text-white">
+        Design for generating AC signal based on inputs
       </p>
     </div>
 
-    <!-- Hero Image -->
-    <figure class="image mb-6">
-      <img src="assets/img/arm_function_generator_photo.jpeg" alt="Arm assembly function generator mechanism">
-    </figure>
+    <!-- ===== MEDIA ===== -->
+    <div class="columns is-vcentered mb-6">
+      <div class="column is-flex is-justify-content-center">
+        <div style="width: 100%; max-width: 650px;"> 
+          <figure class="image is-1by1"> <iframe 
+              class="has-ratio" 
+              src="https://www.youtube.com/embed/mStjE1RllbM?autoplay=1&mute=1&playlist=mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM,mStjE1RllbM"
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              style="border-radius: 8px;">
+            </iframe>
+          </figure>
+        </div>
+      </div>
+    
+      <div class="column is-flex is-justify-content-center">
+        <figure class="image" style="max-width: 350px;">
+          <img src="assets/img/arm_function_generator_photo.jpeg" 
+               alt="Arm assembly" 
+               style="border-radius: 8px; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    </div>
 
     <!-- Project Overview -->
     <div class="columns is-centered">
@@ -45,43 +65,46 @@
         <div class="box">
 
           <h2 class="title is-4">Project Overview</h2>
-          <p>
-            This project focused on the design and analysis of a mechanical
-            arm assembly capable of generating a prescribed output motion
-            from a rotational input. The mechanism functions as a mechanical
-            function generator, translating continuous input motion into a
-            specific arm trajectory.
+          <p class="has-text-white">
+            In this project, I programmed an STM32 using ARM Assembly to output an AC signal based on voltage inputs from two potentiometers. The design allows me to take in
+            the voltage from the pot, and output the corresponding amplitude and frequency of the signal.
           </p>
 
           <hr>
 
           <h2 class="title is-4">Key Features</h2>
-          <ul>
-            <li>Mechanical function generation using linkages</li>
-            <li>Defined input-output motion relationship</li>
-            <li>Precision joint and linkage design</li>
-            <li>Validated through kinematic analysis</li>
+          <ul class="has-text-white">
+            <li>Direct Register Manipulation</li>
+            <li>Analog to Digital Conversion</li>
+            <li>Digital to Analog Conversion</li>
+            <li>GPIO Configuration</li>
           </ul>
 
           <hr>
 
           <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
-            <span class="tag">Mechanical Design</span>
-            <span class="tag">Kinematic Analysis</span>
-            <span class="tag">CAD Modeling</span>
-            <span class="tag">Linkage Mechanisms</span>
-            <span class="tag">Engineering Analysis</span>
+            <span class="tag">Osciliscope</span>
+            <span class="tag">Prototyping</span>
+            <span class="tag">Assembly</span>
           </div>
 
           <hr>
 
           <h2 class="title is-4">Implementation Details</h2>
-          <p>
-            The arm assembly was designed by defining the desired output motion
-            and synthesizing a linkage configuration to achieve that behavior.
-            Geometric relationships between links were analyzed to ensure smooth,
-            repeatable motion across the full range of operation.
+          <p class="has-text-white">
+            In this project, I developed an embedded system to generate and manipulate waveforms using an STM32 microcontroller, 
+            focusing on digital-to-analog conversion (DAC) and direct digital synthesis (DDS). I implemented assembly routines to
+            calculate phase increments based on a desired frequency and sample rate, enabling the system to iterate through a 1024-entry wave table.
+            I decided to use phase tracking in "16ths" to maintain precision, successfully producing waveforms such as sine and sawtooth 
+            waves, which were verified on an oscilloscope at frequencies around 585Hz to 597Hz.
+
+
+            In addition to controlling the frequency of the signal, I also used analog-to-digital conversion (ADC) to allow for real-time hardware interaction. 
+            I configured ADC channels (specifically channels 5 and 6) to read values from potentiometers on a breadboard. These readings were
+            used as scalars to dynamically adjust the gain and frequency through a continuous read loop in my main assembly 
+            code. This integration demonstrated a complete signal chain where physical analog inputs directly influenced the digital generation of
+            audio signals.
           </p>
 
         </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weatherboard LED Display | Kez Balistreri</title>
+  <title>Tamagotchi Handheld Game Console | Kez Balistreri</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bulma -->
@@ -15,32 +15,43 @@
 <body>
 
 <!-- ================= NAV ================= -->
-<nav class="navbar section-4">
+<nav class="navbar section-1">
   <div class="navbar-brand">
     <a class="navbar-item nav-item" href="index.html">← Back to Portfolio</a>
   </div>
 </nav>
 
 <!-- ================= MAIN CONTENT ================= -->
-<section class="section section-4">
+<section class="section section-1">
   <div class="container">
 
     <!-- Project Title -->
     <div class="has-text-centered mb-6">
-      <h1 class="title is-2">Weatherboard</h1>
+      <h1 class="title is-2">Tamagotchi Handheld Game Console</h1>
       <p class="subtitle is-5 has-text-white">
-        Real-time weather visualization using an addressable LEDs
+        Custom PCB for Tamagotchi Game Console
       </p>
     </div>
 
+        <!-- Hero Image -->
+    <!--
+    
+    <div class="is-flex is-justify-content-center">
+      <figure class="image mb-6" style="width: 100%; max-width: 400px;">
+        <img src="assets/img/tamagotchi_pcb.png" alt="R2-D2 interactive robot" style="border-radius: 8px;">
+      </figure>
+    </div>
 
+    -->
+    
     <!-- ===== MEDIA ===== -->
     <div class="columns is-vcentered mb-6">
       <div class="column is-flex is-justify-content-center">
-        <div style="width: 100%; max-width: 500px;"> 
-          <figure class="image is-1by1"> <iframe 
+        <div style="max-width: 600px; width: 100%;">
+          <figure class="image is-16by9"> 
+            <iframe 
               class="has-ratio" 
-              src="https://www.youtube.com/embed/ZXEoSutciW4?autoplay=1&mute=1&playlist=ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4,ZXEoSutciW4"
+              src="https://www.youtube.com/embed/fMISraIdO6o?autoplay=1&mute=1&loop=1&playlist=fMISraIdO6o"
               frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen
@@ -49,16 +60,15 @@
           </figure>
         </div>
       </div>
-
+    
       <div class="column is-flex is-justify-content-center">
         <figure class="image" style="max-width: 500px;">
-          <img src="assets/img/weather_board.png" 
-               alt="Weather Board Front" 
+          <img src="assets/img/tamagotchi_pcb.png" 
+               alt="Tamagtochi PCB Screen Capture" 
                style="border-radius: 8px; aspect-ratio: 1/1; object-fit: cover;">
         </figure>
       </div> 
     </div>
-    
 
     <!-- Project Overview -->
     <div class="columns is-centered">
@@ -68,42 +78,37 @@
 
           <h2 class="title is-4">Project Overview</h2>
           <p class="has-text-white">
-            Weatherboard is an animated LED display that visualizes real-time
-            weather data retrieved from an external API. The system fetches,
-            deserializes, and interprets JSON data, mapping weather conditions
-            to dynamic lighting patterns across an addressable LED array.
+            Led an electronics workshop of 20 students where each participant soldered and programmed a Tamagotchi game console. 
           </p>
 
           <hr>
 
           <h2 class="title is-4">Key Features</h2>
           <ul class="has-text-white">
-            <li>Live weather data fetched from an external API</li>
-            <li>JSON parsing on embedded hardware</li>
-            <li>Animated visualizations using WS2811 LEDs</li>
-            <li>WiFi-enabled microcontroller</li>
+            <li>2 layer pcb</li>
+            <li>Active low GPIO button Configuration</li>
+            <li>I2C communication protocol used to communicate with LDC</li>
+            <li>Through hole soldering</li>
+            <li>3D printed housing designed in Fusion</li>
           </ul>
 
           <hr>
 
           <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
-            <span class="tag">WS2811 LEDs</span>
-            <span class="tag">OpenWeatherAPI</span>
-            <span class="tag">JSON</span>
-            <span class="tag">Embedded Systems</span>
-            <span class="tag">Arduino Uno R4 WiFi</span>
+            <span class="tag">KiCad</span>
+            <span class="tag">LCD Programming</span>
+            <span class="tag">PCB Design</span>
+            <span class="tag">ESP 32</span>
+            <span class="tag">Hardware Validation</span>
           </div>
 
           <hr>
 
-          <h2 class="title is-4">Implementation Details</h2>
+          <h2 class="title is-4">Design & Validation</h2>
           <p class="has-text-white">
-            The system periodically retrieves weather data over WiFi and
-            deserializes JSON responses to extract key metrics such as
-            temperature and conditions. These values are then translated
-            into color schemes and animation patterns, creating an intuitive
-            and ambient weather display.
+            Ensured design passed DRC check, and that all footprints matched the selected components prior to ordering. Assembled
+            3 consoles to ensure the design was functional. 
           </p>
 
         </div>

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <!-- Your existing stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -22,21 +22,23 @@
 </nav>
 
 <!-- ================= MAIN CONTENT ================= -->
-<section class="section section-5">
+<section class="section section-1">
   <div class="container">
 
     <!-- Project Title -->
     <div class="has-text-centered mb-6">
-      <h1 class="title is-2">R2-D2 Interactive Robot</h1>
-      <p class="subtitle is-5">
-        Embedded robotics project with autonomous and reactive behaviors
+      <h1 class="title is-2">R2-D2 Robot</h1>
+      <p class="subtitle is-5 has-text-white">
+        Embedded robotics project with pre-programmed movement pattern
       </p>
     </div>
 
     <!-- Hero Image -->
-    <figure class="image mb-6">
-      <img src="assets/img/r2_d2.jpg" alt="R2-D2 interactive robot">
-    </figure>
+    <div class="is-flex is-justify-content-center">
+      <figure class="image mb-6" style="width: 100%; max-width: 400px;">
+        <img src="assets/img/r2_d2.jpg" alt="R2-D2 interactive robot" style="border-radius: 8px;">
+      </figure>
+    </div>
 
     <!-- Project Overview -->
     <div class="columns is-centered">
@@ -45,21 +47,19 @@
         <div class="box">
 
           <h2 class="title is-4">Project Overview</h2>
-          <p>
-            This project involved designing and programming an interactive
-            R2-D2 inspired robot capable of autonomous movement and responsive
-            behavior. The system integrates motor control, sensors, and audio
-            feedback to create an engaging and reactive robotic character.
+          <p class="has-text-white">
+            This project involved designing and programming a battery-powered
+            R2-D2-inspired robot.
           </p>
 
           <hr>
 
           <h2 class="title is-4">Key Features</h2>
-          <ul>
-            <li>Autonomous and reactive motion control</li>
-            <li>Sensor-driven state machine architecture</li>
-            <li>Integrated audio feedback and sound effects</li>
-            <li>Modular embedded software design</li>
+          <ul class="has-text-white">
+            <li>Motor Driver Implimentation</li>
+            <li>Custom Wiring Harness</li>
+            <li>Dual motor setup</li>
+            <li>Tight fitting 3d-printed housing</li>
           </ul>
 
           <hr>
@@ -68,19 +68,16 @@
           <div class="tags">
             <span class="tag">Microcontroller</span>
             <span class="tag">Embedded C/C++</span>
-            <span class="tag">Motor Control</span>
-            <span class="tag">Sensors</span>
-            <span class="tag">Robotics</span>
+            <span class="tag">Motor Driver</span>
           </div>
 
           <hr>
 
           <h2 class="title is-4">Implementation Details</h2>
-          <p>
-            The robot’s behavior is governed by a state-based control system
-            that responds to sensor input and user interaction. Motor control,
-            sound playback, and behavioral transitions are coordinated to
-            produce expressive and lifelike movement patterns.
+          <p class="has-text-white">
+            The electronics consisted of two motors mounted in the base, a motor driver, 
+            and an ESP32 microcontroller, all powered using a battery pack. We used pulse-width 
+            modulation to make the motors' variable speed, enabling programmable, realistic movement patterns.
           </p>
 
         </div>
