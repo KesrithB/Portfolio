@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tractive Battery Design | Kez Balistreri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Your existing stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar section-1">
+  <div class="navbar-brand">
+    <a class="navbar-item nav-item" href="index.html">← Back to Portfolio</a>
+  </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<section class="section section-1">
+  <div class="container">
+
+    <!-- Project Title -->
+    <div class="has-text-centered mb-6">
+      <h1 class="title is-2">Suspension Monitoring with Strain Gauges</h1>
+      <p class="subtitle is-5 has-text-white">
+        Half-bridge strain gauge circuit for monitoring suspension arm deflection in a Formula SAE vehicle
+      </p>
+    </div>
+
+    <div class="columns is-variable is-4 is-multiline is-centered mb-6">
+      
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/strain_gauge_suspension_monitoring_pcb_3d_view.png" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/thermistor_placements.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/thermistor_harness.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/original_thermistor_harness.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+      <div class="column is-4">
+        <figure class="image">
+          <img src="assets/img/tsmp_box_cleat_view.png" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+        </figure>
+      </div>
+    
+    
+    </div>
+
+    <!-- Project Overview -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+
+        <div class="box">
+
+          <h2 class="title is-4">Project Overview</h2>
+          <p class="has-text-white">
+            Monitoring the deflection of the push rods in the suspension will help us understand how the suspension 
+            is performing and if it is operating within the desired range. The strain gauge circuit was designed to 
+            be a half-bridge configuration, which allows for more accurate measurements of strain than a quarter-bridge.
+            The strain gauges must be placed on the other side of the push rod exactly opposite to the other so that
+            we are getting accurate strain radings at that location. 
+            
+            with this setup, one strain gauge will be in tension while the other is in compression, which makes the voltage
+            differential we are trying to measure larger. The strain gauges are connected to a Wheatstone bridge circuit,
+            which converts the small changes in resistance of the strain gauges into a voltage we can measure and amplify
+            with an HX711 chip. 
+            
+            The HX711 chips have a 24 bit resolution (which is well above our noise rejection ratio) and sample at 10hz or 80hz.
+            We opted for 10hz sampling because this results in far less noise because of the sinc LP filter which is not 
+            available when sampling at 80hz.
+            
+            Once these readings are taken, they are sent over CAN to the main ECU, which then logs the data.
+
+            The pcb is designed to be compact so it can be easily attached during testing, and removed for competition.
+            <br><br>
+            
+          
+
+          </p>
+
+          <hr>
+            <h2 class="title is-4">Key Features</h2>
+            <ul class="has-text-white">
+              <li>12V -> 5V buck converter </li>
+              <li>sensitive analog measurement</li>
+              <li>CAN communication</li>
+              <li>Strain gauges</li>
+              <li>Half Bridge Configuration</li>
+            </ul>
+          <hr>
+
+        <h2 class="title is-4">Tools & Technologies</h2>
+          <div class="tags">
+            <span class="tag">KiCAD</span>
+          </div>
+        <hr>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
