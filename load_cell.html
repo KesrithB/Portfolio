@@ -5,38 +5,34 @@
   <title>Load Cell Design | Kez Balistreri</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bulma -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-  <!-- Your existing stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-<!-- ================= NAV ================= -->
 <nav class="navbar section-1">
   <div class="navbar-brand">
     <a class="navbar-item nav-item" href="index.html">← Back to Portfolio</a>
   </div>
 </nav>
 
-<!-- ================= MAIN CONTENT ================= -->
 <section class="section section-1">
   <div class="container">
 
-    <!-- Project Title -->
     <div class="has-text-centered mb-6">
       <h1 class="title is-2">Load Cell Design</h1>
       <p class="subtitle is-5 has-text-white">
         High-precision load cell for measuring forces up to 400Lbs
       </p>
-
     </div>
-    <!-- ===== MEDIA ===== -->
-    <div class="columns is-vcentered mb-6">
-      <div class="column is-flex is-justify-content-center">
-        <div style="max-width: 600px; width: 100%;">
+
+    <div class="columns is-variable is-6">
+      
+      <div class="column is-5">
+        
+        <div class="mb-4">
           <figure class="image is-16by9"> 
             <iframe 
               class="has-ratio" 
@@ -48,41 +44,36 @@
             </iframe>
           </figure>
         </div>
-      </div>
-    <div class="columns is-variable is-4 is-multiline is-centered mb-6">
-      
-      <div class="column is-4">
-        <figure class="image">
-          <img src="assets/img/Load Cell/load_cell_v3_climbing_hold_test_setup.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-        </figure>
-      </div>
-    
-      <div class="column is-4">
-        <figure class="image">
-           <img src="assets/img/Load Cell/load_cell_v3_ y_axis_view.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-        </figure>
-      </div>
-    
-      <div class="column is-4">
-        <figure class="image">
-           <img src="assets/img/Load Cell/load_cell_v3_under_view.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-        </figure>
-      </div>
-    
-      <div class="column is-4">
-        <figure class="image">
-           <img src="assets/img/Load Cell/load_cell_soldering_in_progress.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-        </figure>
-      </div>
-    
 
-    
-    </div>
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-6">
+            <figure class="image">
+              <img src="assets/img/Load Cell/load_cell_v3_climbing_hold_test_setup.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+            </figure>
+          </div>
 
-    <!-- Project Overview -->
-    <div class="columns is-centered">
-      <div class="column is-8">
+          <div class="column is-6">
+            <figure class="image">
+              <img src="assets/img/Load Cell/load_cell_v3_ y_axis_view.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+            </figure>
+          </div>
 
+          <div class="column is-6">
+            <figure class="image">
+              <img src="assets/img/Load Cell/load_cell_v3_under_view.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+            </figure>
+          </div>
+
+          <div class="column is-6">
+            <figure class="image">
+              <img src="assets/img/Load Cell/load_cell_soldering_in_progress.jpeg" style="border-radius: 8px; width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+            </figure>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="column is-7">
         <div class="box">
 
           <h2 class="title is-4">Project Overview</h2>
@@ -92,50 +83,47 @@
             simulations to ensure the load cell would not deform under my desired load of 400Lbs,
             while keeping the measurment points on the arms weak enough so that they would experience 
             stress and strain that was measurable. Only after this did I decide to mill the load cell out of 6061 aluminum. 
-
+            <br><br>
             I used a full bridge strain gauge configuration to measure the stress and strain in the 4 most sensitive parts of each axis.
             I scribed the positions for the strain gauges so that they were in identical position on both sides,
             and adhered them with cyanoacrylate glue. I then soldered the wires to the strain gauges and ran the 
             wiring through small holes in the load cell to keep everything tidy.
-            
+            <br><br>
             For the electronics, I decided to use an HX711 chip to measure each axis. This chip is a 24 bit ADC designed to measure
             strain gauges. I used a separate HX711 for each axis, and used an ESP32 to read the data from each HX711, and send it 
             to my computer over usb. 
-            
+            <br><br>
             To account for cell crosstalk, I had to calibrate the load cell by applying a 10kg load in exactly the X, Y, and Z directions,
             and recording the output of each axis. I used this data to create a correction matrix that is multiplied by the load cell output
             to remove the crosstalk error. 
-            
+            <br><br>
             I used a java program to read the data and graph the force vector in a 3D space along with the
             forces in each direction, and the total magnitude of the force vector.
-
-            The final product was a fully functional load cell that could measure and distinguish forces in 3 axes with a Maximum
-            force before deformation of 400lbs
             <br><br>
-            
-    
+            The final product was a fully functional load cell that could measure and distinguish forces in 3 axes with a Maximum
+            force before deformation of 400lbs.
           </p>
 
           <hr>
-            <h2 class="title is-4">Key Features</h2>
-            <ul class="has-text-white">
-              <li>Strain Gauges</li>
-              <li>HX711 ADC</li>
-              <li>Correction Matrix</li>
-              <li>CAD Design</li>
-              <li>FEA Analysis</li>
-            </ul>
-          <hr>
+          <h2 class="title is-4">Key Features</h2>
+          <ul class="has-text-white" style="list-style-type: disc; margin-left: 1.5rem;">
+            <li>Strain Gauges</li>
+            <li>HX711 ADC</li>
+            <li>Correction Matrix</li>
+            <li>CAD Design</li>
+            <li>FEA Analysis</li>
+          </ul>
 
-        <h2 class="title is-4">Tools & Technologies</h2>
+          <hr>
+          <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
             <span class="tag">Fusion</span>
             <span class="tag">Bridgeport Mill</span>
           </div>
-        <hr>
 
         </div>
       </div>
+
     </div>
 
   </div>
