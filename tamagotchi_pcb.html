@@ -50,16 +50,15 @@
       <div class="column is-10">
         <div class="columns is-vcentered">
           
-          <!-- Left: YouTube Video with cropped black bars -->
+          <!-- Left: YouTube Video (Cleaned Sub-Pixel Artifacts) -->
           <div class="column is-6">
-            <div class="image is-1by1" style="border-radius: 8px; overflow: hidden;">
+            <div style="position: relative; width: 100%; padding-top: 100%; border-radius: 8px; overflow: hidden; background: #000;">
               <iframe 
-                class="has-ratio" 
                 src="https://www.youtube.com/embed/Tmj5TXKK96U?autoplay=1&mute=1&loop=1&playlist=Tmj5TXKK96U"
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
-                style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.8);">
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; transform: scale(1.85); transform-origin: center center;">
               </iframe>
             </div>
           </div>
