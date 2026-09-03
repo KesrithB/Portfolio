@@ -33,39 +33,32 @@
       </p>
     </div>
 
-<!-- Outer wrapper to center and widen the grid container -->
-<div class="columns is-multiline is-centered mb-5">
-  
-  <div class="column is-10">
-    <figure class="image">
-      <img src="assets/img/Strain Gauge System/strain_gauge_suspension_monitoring_pcb_3d_view.png" style="border-radius: 8px; width: 100%; height: auto;">
-    </figure>
-  </div>
+    <!-- Main Side-by-Side Grid (Images Left, Text Right) -->
+    <div class="columns is-centered mb-6">
+      
+      <!-- Left Column: Stacked Images -->
+      <div class="column is-6">
+        <div class="is-flex is-flex-direction-column gap-4">
+          <figure class="image mb-4">
+            <img src="assets/img/Strain Gauge System/strain_gauge_suspension_monitoring_pcb_3d_view.png" style="border-radius: 8px; width: 100%; height: auto;">
+          </figure>
 
-  <div class="column is-10">
-    <figure class="image">
-      <img src="assets/img/Strain Gauge System/pcb_viewer.PNG" style="border-radius: 8px; width: 100%; height: auto;">
-    </figure>
-  </div>
+          <figure class="image mb-4">
+            <img src="assets/img/Strain Gauge System/pcb_viewer.PNG" style="border-radius: 8px; width: 100%; height: auto;">
+          </figure>
 
-  <div class="column is-10">
-    <figure class="image">
-      <img src="assets/img/Strain Gauge System/voltage_scheme.PNG" style="border-radius: 8px; width: 100%; height: auto;">
-    </figure>
-  </div>
+          <figure class="image mb-4">
+            <img src="assets/img/Strain Gauge System/voltage_scheme.PNG" style="border-radius: 8px; width: 100%; height: auto;">
+          </figure>
 
-  <div class="column is-10">
-    <figure class="image">
-      <img src="assets/img/Strain Gauge System/hx711_connections.PNG" style="border-radius: 8px; width: 100%; height: auto;">
-    </figure>
-  </div>
+          <figure class="image mb-4">
+            <img src="assets/img/Strain Gauge System/hx711_connections.PNG" style="border-radius: 8px; width: 100%; height: auto;">
+          </figure>
+        </div>
+      </div>
 
-</div>
-
-    <!-- Project Overview -->
-    <div class="columns is-centered">
-      <div class="column is-8">
-
+      <!-- Right Column: Overview Box -->
+      <div class="column is-6">
         <div class="box">
 
           <h2 class="title is-4">Project Overview</h2>
@@ -75,45 +68,41 @@
             be a half-bridge configuration, which allows for more accurate measurements of strain than a quarter-bridge.
             The strain gauges must be placed on the other side of the push rod exactly opposite to the other so that
             we are getting accurate strain radings at that location. 
-            
-            with this setup, one strain gauge will be in tension while the other is in compression, which makes the voltage
+            <br><br>
+            With this setup, one strain gauge will be in tension while the other is in compression, which makes the voltage
             differential we are trying to measure larger. The strain gauges are connected to a Wheatstone bridge circuit,
             which converts the small changes in resistance of the strain gauges into a voltage we can measure and amplify
             with an HX711 chip. 
-            
+            <br><br>
             The HX711 chips have a 24 bit resolution (which is well above our noise rejection ratio) and sample at 10hz or 80hz.
             We opted for 10hz sampling because this results in far less noise because of the sinc LP filter which is not 
             available when sampling at 80hz.
-            
+            <br><br>
             Once these readings are taken, they are sent over CAN to the main ECU, which then logs the data.
-
+            <br><br>
             The pcb is designed to be compact so it can be easily attached during testing, and removed for competition. It will 
             be housed in a 3d printed watertight box.
-            <br><br>
-            
-          
-
           </p>
 
           <hr>
-            <h2 class="title is-4">Key Features</h2>
-            <ul class="has-text-white">
-              <li>12V -> 5V buck converter </li>
-              <li>sensitive analog measurement</li>
-              <li>CAN communication</li>
-              <li>Strain gauges</li>
-              <li>Half Bridge Configuration</li>
-            </ul>
-          <hr>
+          <h2 class="title is-4">Key Features</h2>
+          <ul class="has-text-white" style="list-style-type: disc; margin-left: 1.5rem;">
+            <li>12V -> 5V buck converter</li>
+            <li>Sensitive analog measurement</li>
+            <li>CAN communication</li>
+            <li>Strain gauges</li>
+            <li>Half Bridge Configuration</li>
+          </ul>
 
-        <h2 class="title is-4">Tools & Technologies</h2>
+          <hr>
+          <h2 class="title is-4">Tools & Technologies</h2>
           <div class="tags">
             <span class="tag">KiCAD</span>
           </div>
-        <hr>
 
         </div>
       </div>
+
     </div>
 
   </div>
