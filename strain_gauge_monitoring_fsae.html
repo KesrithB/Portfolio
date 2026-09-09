@@ -82,10 +82,10 @@
           <h2 class="title is-4">Project Overview</h2>
           <p class="has-text-white">
             Monitoring the deflection of the push rods in the suspension will help us understand how the suspension 
-            is performing and if it is operating within the desired range. The strain gauge circuit was designed to 
-            be a half-bridge configuration, which allows for more accurate measurements of strain than a quarter-bridge.
-            The strain gauges must be placed on the other side of the push rod exactly opposite to the other so that
-            we are getting accurate strain radings at that location. 
+            is performing and if it is operating within the desired range. I decided to use a strain gauge circuit 
+            in a half-bridge configuration to measure the stress and strain experienced by the push rods.
+            I opted for a half bridge configuratino since it allows for more accurate measurements of strain than a quarter-bridge.
+            The strain gauges must be placed in exactly opposite positions on the push rod, so rotated 180 degrees
             <br><br>
             With this setup, one strain gauge will be in tension while the other is in compression, which makes the voltage
             differential we are trying to measure larger. The strain gauges are connected to a Wheatstone bridge circuit,
@@ -96,9 +96,9 @@
             We opted for 10hz sampling because this results in far less noise because of the sinc LP filter which is not 
             available when sampling at 80hz.
             <br><br>
-            Once these readings are taken, they are sent over CAN to the main ECU, which then logs the data.
+            Once these readings are taken, they are sent over CAN to the main ECU which then logs the data.
             <br><br>
-            The pcb is designed to be compact so it can be easily attached during testing, and removed for competition. It will 
+            The pcb is designed to be compact so it can be easily attached during testing and removed for competition. It will 
             be housed in a 3d printed watertight box.
           </p>
 
