@@ -96,13 +96,13 @@
             We opted for 10hz sampling because this results in far less noise because of the sinc LP filter which is not 
             available when sampling at 80hz.
             <br><br>
-            Once these readings are taken, they are sent over CAN to the main ECU, which then logs the data.
+            Once these readings are taken, they are sent over CAN to the main ECU which then logs the data.
             <br><br>
-            The pcb is designed to be compact so it can be easily attached during testing, and removed for competition. It will 
+            The pcb is designed to be compact so it can be easily attached during testing and removed for competition. It will 
             be housed in a 3d printed watertight box.
           </p>
 
-          
+
           <h2 class="title is-4">Design Considerations</h2>
           <p class="has-text-white">
             This PCB uses a buck converter to step 12V down to 5V. the 5V rail supplies the ESP32, while a the hx711 chips that 
