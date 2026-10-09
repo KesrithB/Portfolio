@@ -81,10 +81,10 @@
 
           <h2 class="title is-4">Project Overview</h2>
           <p class="has-text-white">
-            Monitoring the deflection of the push rods in the suspension will help us understand how the suspension 
-            is performing and if it is operating within the desired range. The strain gauge circuit was designed to 
+            Monitoring the deflection of the push rods in the suspension will help our FSAE Racing team understand how the suspension 
+            is performing, and if it is operating within the desired range. The strain gauge circuit was designed to 
             be a half-bridge configuration, which allows for more accurate measurements of strain than a quarter-bridge.
-            The strain gauges must be placed on the other side of the push rod exactly opposite to the other so that
+            The strain gauges must be placed on opposite sides of the push rod so that
             we are getting accurate strain radings at that location. 
             <br><br>
             With this setup, one strain gauge will be in tension while the other is in compression, which makes the voltage
@@ -101,6 +101,17 @@
             The pcb is designed to be compact so it can be easily attached during testing, and removed for competition. It will 
             be housed in a 3d printed watertight box.
           </p>
+
+          
+          <h2 class="title is-4">Design Considerations</h2>
+          <p class="has-text-white">
+            This PCB uses a buck converter to step 12V down to 5V. the 5V rail supplies the ESP32, while a the hx711 chips that 
+            are powered through a ferrite bead on the 5V rail since they are making the sensitive analog measurements of the half 
+            bridge strain gauge circuit.
+            <br><br>
+
+          </p>    
+
 
           <hr>
           <h2 class="title is-4">Key Features</h2>
